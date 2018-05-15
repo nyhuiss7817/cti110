@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+ CTI 110
+Project
+Steven Nyhuis
+8 May 2018
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+	}
+
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	}
+
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+
+	.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+
+	.col-25 {
+		float: left;
+		width: 25%;
+		margin-top: 6px;
+	}
+
+	.col-75 {
+		float: left;
+		width: 75%;
+		margin-top: 6px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+</style>
+</head>
+<body>
+
+	<header>
+				
+		<h1>
+		<img src='monster_hunter_world_second_fleet_icon.png' alt="second Fleet Icon" style="float:right;width:100px;height:100px;">
+		<img src='monster_hunter_world_second_fleet_icon.png' alt="second Fleet Icon" style="float:left;width:100px;height:100px;">
+		
+		<h1 style="text-align:center;">Monster Hunter Game Time</h1>
+		
+		<p style="text-align:center;">Let's hunt together...</p>
+		
+	</header>
+	
+	<nav style="text-align:center;">
+		<a href="index.html">Home</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="post.html">Posts</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="request.html">Request</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="bosses.html">Bosses</a>
+	</nav>
+
+	<h2>Play Request Form</h2>
+	<p>"Post" a request!  Let us know what mission you need help with and when you're available.  We will shoot you an in game invite or respond to your post.</p>
+
+	<div class="container">
+	  <form action="/action_page.php">
+		<div class="row">
+		  <div class="col-25">
+			<label for="Cname">Charater's Name</label>
+		  </div>
+		  <div class="col-75">
+			<input type="text" id="Cname" name="Cname" placeholder="Your Charater's name..">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-25">
+			<label for="level">Charater's Level</label>
+		  </div>
+		  <div class="col-75">
+			<input type="text" id="level" name="level" placeholder="Your level..">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-25">
+			<label for="Weapon">Weapon</label>
+		  </div>
+		  <div class="col-75">
+			<select id="Weapon" name="Weapon">
+			  <option value="longsword">Long Sword</option>
+			  <option value="hammer">Hammer</option>
+			  <option value="bowgun">Bowgun</option>
+			  <option value="glaive">Insect Glaive</option>
+			</select>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-25">
+			<label for="Mission">Mission</label>
+		  </div>
+		  <div class="col-75">
+			<textarea id="Mission" name="Mission" placeholder="What do you need help with and when.." style="height:200px"></textarea>
+		  </div>
+		</div>
+		<div class="row">
+		  <input type="submit" value="Submit">
+		</div>
+	  </form>
+	</div>
+
+	<div class="footer">
+	  <p>Web Page questions, please contact:</p>
+	  <a href="mailto:nyhuiss7817@student.faytechcc.edu">NyhuisS7817</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+ CTI 110
+Project
+Steven Nyhuis
+8 May 2018
+-->
+
+<html>
+
+<head>
+
+	<style>
+	* {box-sizing: border-box;}
+	
+	.header, .footer {background-color: lightsteelblue; color: white; padding: 15px;}
+		
+	.column {float: left; padding: 15px;}
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.menu {
+		width: 25%;
+	}
+	.content {
+		width: 75%;
+	}
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.menu li {
+		padding: 15px;
+		margin-bottom: 8px;
+		background-color: #33b5e5;
+		color: #ffffff;
+	}
+	.menu li:hover {
+		background-color: #0099cc;
+	}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+				
+		<h1>
+		<img src='monster_hunter_world_first_fleet_icon.png' alt="First Fleet Icon" style="float:right;width:100px;height:100px;">
+		<img src='monster_hunter_world_first_fleet_icon.png' alt="First Fleet Icon" style="float:left;width:100px;height:100px;">
+		
+		<h1 style="text-align:center;">Monster Hunter Game Time</h1>
+		
+		<p style="text-align:center;">Let's hunt together...</p>
+		
+	</header>
+	
+	<nav style="text-align:center;">
+		<a href="index.html">Home</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="post.html">Posts</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="request.html">Request</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+		<a href="bosses.html">Bosses</a>
+	</nav>
+
+
+
+	<div class="header">
+		<h1>Welcome to Monster Hunter Game Time for Monster Hunter: World</h1>
+	</div>
+
+	<div class="clearfix">
+	  <div class="column menu">
+		<ul>
+		  <li><a href="post.html">Mission Postings</a></li>
+		  <li><a href="request.html">Posting Requests</a></li>
+		  <li><a href="bosses.html">Bosses</a></li>
+		  <li><a href="food.html">The Food</a></li>
+		</ul>
+	  </div>
+	  
+	  <div class="column content">
+		<img src='img_palico_05.png' alt="palico" style="float:right;width:200px;height:200px;">
+		<h1>About Us</h1>
+		<p>This site is about hunters getting together to battle gigantic monsers in epic locales</p>
+		<p>Monster Hunter: World is an action role-playing game developed and published by Capcom. 
+		A part of the Monster Hunter series, it was released worldwide for PlayStation 4 and Xbox 
+		One in January 2018</p>
+	  </div>
+	  
+	</div>
+
+	<div class="footer">
+	  <p>Web Page questions, please contact:</p>
+	  <a href="mailto:nyhuiss7817@student.faytechcc.edu">NyhuisS7817</a>
+	</div>
+
+</body>
+</html>
